@@ -75,7 +75,7 @@ git clone https://github.com/cwchen1102/icp_localization.git
 ```
 >**Note:** 
 > If you want to use the ros bag file to test the code, you have to declare the topic name in the code same as the topic name that publish in the ros bag file.
-> In this case, the topic name is /velodyne_points. 
+> In this case, the topic name is **/velodyne_points**. 
 
 #### 3. Build the package
 
