@@ -81,7 +81,7 @@ git clone https://github.com/cwchen1102/icp_localization.git
 
 ```bash
 
-cd ~/Desktop/fh_workspace/localization/ICP_Localization_ws
+cd ~/ICP_Localization_ws
 catkin_make
 source devel/setup.bash
 
@@ -99,7 +99,6 @@ rosrun hw5_0751081 hw5_0751081_node
 in different terminal 
 
 ```bash
-cd /mnt/ce539d25-c534-4d26-8907-788ffe0089fb/280124_hosab2/hosab2_280124_rosbag
 
 rosbag play hdl_map.bag --clock
 
@@ -107,7 +106,6 @@ rosbag play hdl_map.bag --clock
 for listen the topic named **tf** run the following command in different terminal
 
 ```bash
-source ~/Desktop/fh_workspace/localization/ICP_Localization_ws/devel/setup.bash
 
 rostopic echo /tf
 
