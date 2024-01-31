@@ -46,11 +46,11 @@ source devel/setup.bash
 
 ```bash
 
-cd ~/ICP_Localization_ws/src
+cd ~/Desktop/fh_workspace/localization/ICP_Localization_ws/src
 git clone https://github.com/cwchen1102/icp_localization.git
 
 ```
->> **Note:** 
+>**Note:** 
 > If you want to use the ros bag file to test the code, you have to declare the topic name in the code same as the topic name that publish in the ros bag file.
 > In this case, the topic name is /velodyne_points. 
 
@@ -58,7 +58,7 @@ git clone https://github.com/cwchen1102/icp_localization.git
 
 ```bash
 
-cd ~/ICP_Localization_ws
+cd ~/Desktop/fh_workspace/localization/ICP_Localization_ws
 catkin_make
 source devel/setup.bash
 
@@ -76,13 +76,15 @@ rosrun hw5_0751081 hw5_0751081_node
 in different terminal 
 
 ```bash
+cd /mnt/ce539d25-c534-4d26-8907-788ffe0089fb/280124_hosab2/hosab2_280124_rosbag
 
 rosbag play hdl_map.bag --clock
 
 ```
-for listen the topic named tf run the following command in different terminal
+for listen the topic named **tf** run the following command in different terminal
 
 ```bash
+source ~/Desktop/fh_workspace/localization/ICP_Localization_ws/devel/setup.bash
 
 rostopic echo /tf
 
