@@ -1,6 +1,20 @@
 
 # Iterative Close Points Localization
 
+
+- [Iterative Close Points Localization](#Iterative-Close-Points-Localization)
+  - [Purpose](#purpose)
+    - [Host PC Configuration](#host-pc-configuration)
+  - [Inputs](#inputs)
+  - [Outputs](#outputs)
+  - [Implementation](#implementation)
+    - [1. Create a catkin workspace](#1-create-a-catkin-workspace)
+    - [2. Clone the repository](#2-clone-the-repository)
+    - [3. Build the package](#3-build-the-package)
+    - [4. Run the package](#4-run-the-package)
+    - [5. Result](#5-result)
+
+
 ### Purpose
 
 This repository is used to localize the vehicle using the lidar point cloud and ros bag file.
