@@ -131,7 +131,7 @@ int main(int argc, char** argv)
 {
 
     //load map
-    if (pcl::io::loadPCDFile<pcl::PointXYZ> ("map.pcd", *cloud) == -1) //* load the file
+    if (pcl::io::loadPCDFile<pcl::PointXYZ> ("src/iterative_close_points_localization/data/map.pcd", *cloud) == -1) //* load the file
     {
       PCL_ERROR ("Couldn't read file map.pcd \n");
       return (-1);

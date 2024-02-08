@@ -3,11 +3,9 @@
 
 
 - [Iterative Close Points Localization](#Iterative-Close-Points-Localization)
-  - [Purpose](#purpose)
+  - [Description](#purpose)
     - [Host PC Configuration](#host-pc-configuration)
-  - [Inputs](#inputs)
-  - [Outputs](#outputs)
-  - [Implementation](#implementation)
+  - [How to Run](#implementation)
     - [1. Create a catkin workspace](#1-create-a-catkin-workspace)
     - [2. Clone the repository](#2-clone-the-repository)
     - [3. Build the package](#3-build-the-package)
