@@ -51,7 +51,7 @@ source devel/setup.bash
 #### 2. Clone the repository
 ```bash
 cd  ~/.../icp_localization_ws/src
-git clone https://github.com/cwchen1102/icp_localization.git
+git clone https://github.com/furkanhanilci/iterative_close_points_localization.git
 ```
 
 >**Note:**
