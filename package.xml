@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>hw5_0751081</name>
+  <name>icp</name>
   <version>0.0.0</version>
-  <description>The hw5_0751081 package</description>
+  <description>The icp package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->

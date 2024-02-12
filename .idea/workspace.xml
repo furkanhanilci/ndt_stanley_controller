@@ -9,7 +9,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91b4f745-0cc0-46ec-a0dc-3f5194918eda" name="Changes" comment="update" />
+    <list default="true" id="91b4f745-0cc0-46ec-a0dc-3f5194918eda" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hw5_node.cpp" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +60,7 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/eby/fh_workspace&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/yck/Desktop/fh_workspace/GitHub/iterative_close_points_localization&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -75,6 +80,8 @@
       <workItem from="1706619136068" duration="10140000" />
       <workItem from="1707415383046" duration="4373000" />
       <workItem from="1707426284146" duration="279000" />
+      <workItem from="1707722589319" duration="174000" />
+      <workItem from="1707723008368" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
