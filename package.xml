@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>icp</name>
+  <name>ndt_stanley_controller</name>
   <version>0.0.0</version>
   <description>The icp package</description>
 

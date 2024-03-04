@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(icp)
+project(ndt_stanley_controller)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -13,6 +13,8 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   tf_conversions
   tf
+  pcl_ros
+  geometry_msgs
   #Eigen3 REQUIRED
 
 ) 
@@ -20,6 +22,16 @@ find_package(catkin REQUIRED COMPONENTS
 ## System dependencies are found with CMake's conventions
  find_package(Boost REQUIRED COMPONENTS system)
 find_package(PCL 1.2 REQUIRED)
+find_package(PythonLibs REQUIRED)
+include_directories(${PYTHON_INCLUDE_DIRS})
+
+include_directories(
+  include
+  ${catkin_INCLUDE_DIRS}
+  ${EIGEN3_INCLUDE_DIRS}
+  ${Python3_INCLUDE_DIRS}
+  #${PYTHON_PATH}
+)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -108,7 +120,7 @@ find_package(PCL 1.2 REQUIRED)
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   #INCLUDE_DIRS include
-  LIBRARIES icp_node
+  LIBRARIES ndt_stanley_node
   CATKIN_DEPENDS roscpp rospy std_msgs  tf_conversions tf 
   #DEPENDS system_lib
 )
@@ -139,7 +151,14 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
- add_executable(${PROJECT_NAME}_node src/icp_node.cpp)
+
+
+ add_executable(${PROJECT_NAME}_node src/ndt_stanley_node.cpp
+        src/CubicSpline1D.cpp
+        src/StanleyController.cpp
+        src/Linear_Interpolation.cpp
+        src/BicycleModel.cpp
+ )
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -152,9 +171,11 @@ include_directories(
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
- target_link_libraries(${PROJECT_NAME}_node
-   ${catkin_LIBRARIES}
-${PCL_LIBRARIES}
+target_link_libraries(${PROJECT_NAME}_node
+ ${catkin_LIBRARIES}
+ ${EIGEN3_LIBRARIES}
+ #${Python3_LIBRARIES}
+ 
  )
 
 #############
