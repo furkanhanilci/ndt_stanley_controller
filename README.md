@@ -17,9 +17,6 @@
 This repository is used to localize the vehicle using the lidar point cloud and ros bag file.
 
 
-|                         |                                                                           | 
-|-------------------------|---------------------------------------------------------------------------|
-| ICP Localization Github | https://github.com/furkanhanilci/iterative_close_points_localization.git  |
 
 
 #### Dependencies
@@ -66,8 +63,7 @@ cd ../ndt_localization_ws
 source devel/setup.bash
 roslauch roslaunch lidar_localizer ndt_mapping.launch 
 ```
->**Note:**
-> If you have any hesitation about the ndt localizer, you can check the [NDT Localization Github](https://github.com/Samsun-FC/Playground/tree/main/ndt_localizer) folder.
+
 
 for play rosbag record you should to run command given below in different terminal
 ```bash
