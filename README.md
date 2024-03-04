@@ -31,7 +31,6 @@ This repository is used to localize the vehicle using the lidar point cloud and 
 | Ros Version              | Ros 1 Noetic | https://wiki.ros.org/noetic   |
 
 
-
 ### How to Run
 
 #### 1. Create a catkin workspace
@@ -46,7 +45,7 @@ source devel/setup.bash
 
 >**Note:**
 > If you want to use the ros bag file to test the code, you have to declare the topic name in the code same as the topic name that publish in the ros bag file.
-> In this case, the topic name is **/velodyne_points**.
+> In this case, the topic name is **/velodyne_points**. 
 
 #### 2. Build the package
 
